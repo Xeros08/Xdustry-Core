@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--! Advanced Battery -->
+	<ThingDef ParentName="BuildingBase">
+		<!--? Info -->
+		<defName>XI_B_advanced_battery</defName>
+		<label>advanced battery</label>
+		<description>Stores energy for later use. Improved design based on super-capacitors. The design is waterproof, but charged ones can still explode.</description>
+		
+		<thingCategories>
+			<li>BuildingsPower</li>
+		</thingCategories>
+		<designationCategory>Power</designationCategory>
+		
+		<!--? Battery Class & Comps -->
+		<!-- TODO: instead of using these child classes and comp properties, write a Harmony Patch to extend the base functionality (C#) -->
+		<!--* Xdustry.Building_CustomizableBattery -->
+		<thingClass>Xdustry.Building_CustomizableBattery</thingClass>
+		<comps>
+			<!--* Xdustry.CompProperties_CustomizableBattery -->
+			<li Class="Xdustry.CompProperties_CustomizableBattery">
+				<barFillColor>(232,23,26)</barFillColor>
+				<storedEnergyMax>2000</storedEnergyMax>
+				<efficiency>0.8</efficiency>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		
+		<!--? Graphics & Effects -->
+		<size>(1,2)</size>
+		<graphicData>
+			<texPath>XI/Things/Buildings/advanced_battery</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,3)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+
+		<constructEffect>ConstructMetal</constructEffect>
+
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.2</staticSunShadowHeight>
+		<fillPercent>0.40</fillPercent>
+		
+		<!--? Special properties -->
+		<tickerType>Normal</tickerType>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<canOverlapZones>false</canOverlapZones>
+		<altitudeLayer>Building</altitudeLayer>
+		<blockWind>true</blockWind>
+		
+		<!--? Stats -->
+		<passability>PassThroughOnly</passability>
+		<pathCost>80</pathCost>
+		
+		<statBases>
+			<Mass>24</Mass>
+			<MaxHitPoints>240</MaxHitPoints>
+			<WorkToBuild>1200</WorkToBuild>
+
+			<Flammability>0.2</Flammability>
+			<Beauty>-10</Beauty>
+		</statBases>
+		
+		<!--? Materials to make -->
+		<costList>
+			<XI_titanium>40</XI_titanium>
+			<XI_super_cap>10</XI_super_cap>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+
+		<!--? Prerequisites -->
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<researchPrerequisites>
+			<li>XI_R_super_caps</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+</Defs>

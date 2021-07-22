@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!--! Unfinished Generic -->
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>XI_unfinished_generic</defName>
+		<label>unfinished thing</label>
+		<description>An unfinished thing of some kind.</description>
+		<statBases>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Item/Unfinished/UnfinishedComponent</texPath> <!-- TODO: texture -->
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories Inherit="false" />
+	</ThingDef>
+
+	<!--! Unfinished AI Core -->
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>XI_unfinished_ai_core</defName>
+		<label>unfinished ai core</label>
+		<description>An unfinished ai core.</description>
+		<statBases>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Item/Unfinished/UnfinishedComponent</texPath> <!-- TODO: texture -->
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories Inherit="false" />
+	</ThingDef>
+
+	<!--! Unfinished Drug -->
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>XI_unfinished_drug</defName>
+		<label>unfinished drug</label>
+		<description>An unfinished drug of some kind.</description>
+		<statBases>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Item/Unfinished/UnfinishedHealthItem</texPath> <!-- TODO: texture -->
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories Inherit="false" />
+	</ThingDef>
+
+</Defs>

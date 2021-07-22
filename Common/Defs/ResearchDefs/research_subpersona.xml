@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+        <!--* Tier 1 -->
+	<!--! Subpersona -->
+	<ResearchProjectDef>
+		<!--? Info -->
+		<defName>XI_R_artificial_inteligence</defName>
+		<label>Artificial Inteligence</label>
+		<description>Further your knowledge about artificial inteligence and machine personas.</description>
+		
+		<!--? Difficulty -->
+		<techLevel>Spacer</techLevel>
+		<baseCost>1000</baseCost>
+		
+		<!--? Requisites -->
+		<prerequisites>
+			<li>MultiAnalyzer</li>
+		</prerequisites>
+		
+		<!--? Required research equipment -->
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		
+		<!--? Positioning -->
+		<researchViewX>0</researchViewX>
+		<researchViewY>4</researchViewY>
+		<tab>XI_XdustryTab</tab>
+	</ResearchProjectDef>
+
+		<!--* Tier 2 -->
+	<!--! Subpersona -->
+	<ResearchProjectDef>
+		<!--? Info -->
+		<defName>XI_R_subpersonas</defName>
+		<label>Subpersonas</label>
+		<description>Use other machine personas to create subpersonas.</description>
+		
+		<!--? Difficulty -->
+		<techLevel>Ultra</techLevel>
+		<baseCost>2000</baseCost>
+		
+		<!--? Requisites -->
+		<prerequisites>
+			<li>AdvancedFabrication</li>
+			<li>XI_R_artificial_inteligence</li>
+		</prerequisites>
+		<!-- <hiddenPrerequisites></hiddenPrerequisites> -->
+		
+		<!--? Required research equipment -->
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		
+		<!--? Positioning -->
+		<researchViewX>1</researchViewX>
+		<researchViewY>4</researchViewY>
+		<tab>XI_XdustryTab</tab>
+	</ResearchProjectDef>
+
+
+</Defs>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--! Persona Core -->
+    <ThingDef ParentName="ResourceBase">
+        <!--? Info -->
+		<defName>XI_subpersona_core</defName>
+		<label>subpersona core</label>
+		<description>A small AI core housing a high-grade subpersona created based on a hyper-advanced peak-human-equivalent machine persona.\n\nIt keeps some of its previous consciousness and can learn to perform specialized tasks.</description>
+
+		<techLevel>Ultra</techLevel>
+        <thingCategories>
+            <li>Items</li>
+		</thingCategories>
+        
+        <tradeability>Sellable</tradeability>
+        <tradeTags>
+            <li>ExoticMisc</li>
+        </tradeTags>
+
+        <!--? Graphics & Effects -->
+        <graphicData>
+			<texPath>XI/Things/Items/subpersona_core</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+        <uiIconScale>1.1</uiIconScale>
+
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+		
+        <!--? Stats -->
+		<stackLimit>4</stackLimit>
+        <statBases>
+			<MarketValue>1500</MarketValue>
+			<Mass>0.5</Mass>
+
+            <MaxHitPoints>100</MaxHitPoints>
+            <DeteriorationRate>0.2</DeteriorationRate>
+		</statBases>
+	</ThingDef>
+
+</Defs>

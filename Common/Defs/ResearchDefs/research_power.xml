@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+		<!--* Tier 1 -->
+	<!--! Advanced battery -->
+	<ResearchProjectDef>
+		<!--? Info -->
+		<defName>XI_R_advanced_power</defName>
+		<label>advanced power</label>
+		<description>Further your knowledge about energy and electricity.</description>
+		
+		<!--? Difficulty -->
+		<techLevel>Industrial</techLevel>
+		<baseCost>1000</baseCost>
+		
+		<!--? Requisites -->
+		<prerequisites>
+			<li>MultiAnalyzer</li>
+			<li>Batteries</li>
+		</prerequisites>
+		<!-- <hiddenPrerequisites></hiddenPrerequisites> -->
+		
+		<!--? Required research equipment -->
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		
+		<!--? Positioning -->
+		<researchViewX>0</researchViewX>
+		<researchViewY>3</researchViewY>
+		<tab>XI_XdustryTab</tab>
+	</ResearchProjectDef>
+
+
+	<!--* Tier 2 -->
+    <!--! Super-capacitors -->
+	<ResearchProjectDef>
+		<!--? Info -->
+		<defName>XI_R_super_caps</defName>
+		<label>super-capacitors</label>
+		<description>A dense energy storage solution.</description>
+		
+		<!--? Difficulty -->
+		<techLevel>Industrial</techLevel>
+		<baseCost>1000</baseCost>
+		
+		<!--? Requisites -->
+		<prerequisites>
+			<li>XI_R_advanced_power</li>
+		</prerequisites>
+		<hiddenPrerequisites>
+			<li>XI_R_titanium</li>
+		</hiddenPrerequisites>
+		
+		<!--? Required research equipment -->
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		
+		<!--? Positioning -->
+		<researchViewX>1</researchViewX>
+		<researchViewY>3</researchViewY>
+		<tab>XI_XdustryTab</tab>
+	</ResearchProjectDef>
+
+</Defs>

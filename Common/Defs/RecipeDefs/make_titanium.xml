@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--! Make Titanium -->
+	<RecipeDef>
+		<!--? Info -->
+		<defName>XI_MK_titanium_from_titanite</defName>
+		<label>smelt titanium</label>
+		<description>Make a batch of titanium, sourced from titanite.</description>
+		<jobString>Smelting Titanium.</jobString>
+
+		<descriptionHyperlinks>
+			<ThingDef>XI_titanium</ThingDef>
+			<ThingDef>XI_titanite</ThingDef>
+		</descriptionHyperlinks>
+
+		<!--? Effects -->
+		<effectWorking>Smelt</effectWorking>
+        <soundWorking>Recipe_Smelt</soundWorking>
+
+		<!--? Requisites -->
+		<researchPrerequisite>XI_R_titanium</researchPrerequisite>
+
+		<!--? Work to make -->
+		<workAmount>1000</workAmount> <!-- divide by ~57 -->
+    	<workSpeedStat>SmeltingSpeed</workSpeedStat>
+
+		<!--? Ingredients -->
+		<ingredients>
+			<li>
+				<filter><thingDefs>
+					<li>XI_titanite</li>
+				</thingDefs></filter>
+				<count>30</count>
+			</li>
+		</ingredients>
+
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>XI_titanite</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+
+		<!--? Product -->
+		<products>
+			<XI_titanium>20</XI_titanium>
+		</products>
+	</RecipeDef>
+
+</Defs>

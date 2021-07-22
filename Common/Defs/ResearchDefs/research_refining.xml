@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+		<!--* Tier 1 -->
+	<!--! Neutroamine -->
+	<ResearchProjectDef>
+		<!--? Info -->
+		<defName>XI_R_neutroamine</defName>
+		<label>neutroamine</label>
+		<description>Discover a procedure for neutroamine production.\n\nThis is done by taking advantage of a special yeast that feasts on psychoid and alcohol, producing neutroamine as byproduct.</description>
+		
+		<!--? Difficulty -->
+		<techLevel>Industrial</techLevel>
+		<baseCost>1000</baseCost>
+		
+		<!--? Requisites -->
+		<prerequisites>
+			<li>PsychiteRefining</li>
+			<li>BiofuelRefining</li>
+			<li>Brewing</li>
+		</prerequisites>
+		<!--? <hiddenPrerequisites></hiddenPrerequisites> -->
+		
+		<!--? Required research equipment -->
+		<!-- <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding> -->
+		
+		<!--? Positioning -->
+		<researchViewX>0</researchViewX>
+		<researchViewY>0</researchViewY>
+		<tab>XI_XdustryTab</tab>
+	</ResearchProjectDef>
+
+	<!--! Improved Refining -->
+	<ResearchProjectDef>
+		<!--? Info -->
+		<defName>XI_R_improved_refining</defName>
+		<label>improved refining</label>
+		<description>Discover new and more efficient refining procedures.\n\nBy carefully controlling the temperatures at which the materials are processed, one can significantly increase yields and reduce downtime.</description>
+		
+		<!--? Difficulty -->
+		<techLevel>Industrial</techLevel>
+		<baseCost>800</baseCost>
+		
+		<!--? Requisites -->
+		<prerequisites>
+			<li>Electricity</li>
+			<li>BiofuelRefining</li>
+		</prerequisites>
+		<!-- <hiddenPrerequisites></hiddenPrerequisites> -->
+		
+		<!--? Required research equipment -->
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		
+		<!--? Positioning -->
+		<researchViewX>0</researchViewX>
+		<researchViewY>0.5</researchViewY>
+		<tab>XI_XdustryTab</tab>
+	</ResearchProjectDef>
+
+
+		<!--* Tier 2 -->
+	<!--! Titanium -->
+	<ResearchProjectDef>
+		<!--? Info -->
+		<defName>XI_R_titanium</defName>
+		<label>titanium</label>
+		<description>Discover a procedure to extract and make titanium.</description>
+		
+		<!--? Difficulty -->
+		<techLevel>Industrial</techLevel>
+		<baseCost>1500</baseCost>
+		
+		<!--? Requisites -->
+		<prerequisites>
+			<li>XI_R_improved_refining</li>
+		</prerequisites>
+		<!-- <hiddenPrerequisites></hiddenPrerequisites> -->
+		
+		<!--? Required research equipment -->
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		
+		<!--? Positioning -->
+		<researchViewX>1</researchViewX>
+		<researchViewY>0.5</researchViewY>
+		<tab>XI_XdustryTab</tab>
+	</ResearchProjectDef> 
+
+
+		<!--* Tier 3 -->
+	<!--! Plasteel -->
+	<ResearchProjectDef>
+		<!--? Info -->
+		<defName>XI_R_plasteel</defName>
+		<label>plasteel</label>
+		<description>Discover a procedure to make plasteel.</description>
+		
+		<!--? Difficulty -->
+		<techLevel>Spacer</techLevel>
+		<baseCost>1500</baseCost>
+		
+		<!--? Requisites -->
+		<prerequisites>
+			<li>XI_R_titanium</li>
+		</prerequisites>
+		<!-- <hiddenPrerequisites></hiddenPrerequisites> -->
+		
+		<!--? Required research equipment -->
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		
+		<!--? Positioning -->
+		<researchViewX>2</researchViewX>
+		<researchViewY>0.5</researchViewY>
+		<tab>XI_XdustryTab</tab>
+	</ResearchProjectDef> 
+
+</Defs>

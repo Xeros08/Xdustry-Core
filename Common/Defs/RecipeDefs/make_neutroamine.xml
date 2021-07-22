@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- TODO: Neutroamine has to brew like beer (FermentingBarrel), in specialed barrels -->
+	<!-- TODO: These recipes may or may not be temporary -->
+	
+	<!--! Make Neutroamine -->
+	<RecipeDef>
+		<!--? Info -->
+		<defName>XI_MK_neutroamine</defName>
+		<label>make neutroamine</label>
+		<description>Make a batch of neutroamine by extracting it form a fermented mixture of psychoid, alcohol and plants with medicinal properties.</description>
+		<jobString>Extracting Neutroamine.</jobString>
+
+		<descriptionHyperlinks>
+			<ThingDef>Neutroamine</ThingDef>
+		</descriptionHyperlinks>
+
+		<!--? Effects -->
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+
+		<!--? Requisites -->
+		<researchPrerequisite>XI_R_neutroamine</researchPrerequisite>
+
+		<!--? Work to make -->
+		<workAmount>9000</workAmount>  <!-- divide by ~83 -->
+    	<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+
+		<!--? Ingredients -->
+		<ingredients>
+			<li>
+				<filter><thingDefs>
+					<li>Beer</li>
+				</thingDefs></filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter><thingDefs>
+					<li>PsychoidLeaves</li>
+				</thingDefs></filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter><thingDefs>
+					<li>MedicineHerbal</li>
+				</thingDefs></filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Beer</li>
+				<li>PsychoidLeaves</li>
+				<li>MedicineHerbal</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+
+		<!--? Product -->
+		<products>
+			<Neutroamine>4</Neutroamine>
+		</products>
+	</RecipeDef>
+
+
+	<!--! Make Neutroamine++ -->
+	<RecipeDef>
+		<!--? Info -->
+		<defName>XI_MK_neutroamine_plus</defName>
+		<label>make neutroamine++</label>
+		<description>Make a batch of neutroamine by extracting it form a fermented mixture of psychoid, alcohol and plants with medicinal properties.\nYields increased due to research.</description>
+		<jobString>Extracting Neutroamine.</jobString>
+
+		<descriptionHyperlinks>
+			<ThingDef>Neutroamine</ThingDef>
+		</descriptionHyperlinks>
+
+		<!--? Effects -->
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+
+		<!--? Requisites -->
+		<researchPrerequisites>
+			<li>XI_R_neutroamine</li>
+			<li>XI_R_improved_refining</li>
+		</researchPrerequisites>
+
+		<!--? Work to make -->
+		<workAmount>6500</workAmount> <!-- divide by ~83 -->
+    	<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+
+		<!--? Ingredients -->
+		<ingredients>
+			<li>
+				<filter><thingDefs>
+					<li>Beer</li>
+				</thingDefs></filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter><thingDefs>
+					<li>PsychoidLeaves</li>
+				</thingDefs></filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter><thingDefs>
+					<li>MedicineHerbal</li>
+				</thingDefs></filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Beer</li>
+				<li>PsychoidLeaves</li>
+				<li>MedicineHerbal</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+
+		<!--? Product -->
+		<products>
+			<Neutroamine>10</Neutroamine>
+		</products>
+	</RecipeDef>
+
+</Defs>

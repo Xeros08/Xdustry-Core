@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--! Make Chemfuel From Wood++ -->
+	<RecipeDef>
+		<!--? Info -->
+		<defName>XI_MK_chemfuel_from_wood_plus</defName>
+		<label>make chemfuel from wood++</label>
+        <description>Make a batch of chemfuel by extracting and condensing wood gas from logs.</description>
+        <jobString>Refining chemfuel from wood.</jobString>
+
+		<descriptionHyperlinks>
+			<ThingDef>Chemfuel</ThingDef>
+		</descriptionHyperlinks>
+
+		<!--? Effects -->
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+
+		<!--? Requisites -->
+		<researchPrerequisites>
+			<li>BiofuelRefining</li>
+			<li>XI_R_improved_refining</li>
+		</researchPrerequisites>
+		
+		<!--? Work to make -->
+		<workAmount>1500</workAmount>  <!-- divide by ~83 -->
+    	<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+
+		<!--? Ingredients -->
+		<ingredients>
+			<li>
+				<filter><thingDefs>
+					<li>WoodLog</li>
+				</thingDefs></filter>
+				<count>70</count>
+			</li>
+		</ingredients>
+
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>WoodLog</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+
+		<!--? Product -->
+		<products>
+			<Chemfuel>50</Chemfuel>
+		</products>
+	</RecipeDef>
+
+
+    <!--! Make Chemfuel From Organics++ -->
+	<RecipeDef>
+		<!--? Info -->
+		<defName>XI_MK_chemfuel_from_organics_plus</defName>
+		<label>make chemfuel from organics++</label>
+        <description>Make a batch of chemfuel by extracting biofuel from organic feedstocks.</description>
+        <jobString>Refining chemfuel from organics.</jobString>
+
+		<descriptionHyperlinks>
+			<ThingDef>Chemfuel</ThingDef>
+		</descriptionHyperlinks>
+
+		<!--? Effects -->
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+
+		<!--? Requisites -->
+		<researchPrerequisites>
+			<li>BiofuelRefining</li>
+			<li>XI_R_improved_refining</li>
+		</researchPrerequisites>
+		
+		<!--? Work to make -->
+		<workAmount>2000</workAmount>  <!-- divide by ~83 -->
+    	<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+
+		<!--? Ingredients -->
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Foods</li>
+						<li>PlantMatter</li>
+					</categories>
+					<disallowedThingDefs>
+						<li>Hay</li>
+					</disallowedThingDefs>
+					<disallowedCategories>
+						<li>FoodMeals</li>
+					</disallowedCategories>
+				</filter>
+				<count>3.5</count>
+			</li>
+		</ingredients>
+
+		<fixedIngredientFilter>
+			<categories>
+				<li>Foods</li>
+				<li>PlantMatter</li>
+			</categories>
+			<disallowedThingDefs>
+				<li>Hay</li>
+			</disallowedThingDefs>
+			<disallowedCategories>
+				<li>FoodMeals</li>
+			</disallowedCategories>
+		</fixedIngredientFilter>
+
+		<defaultIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<disallowedCategories>
+				<li>MeatRaw</li>
+				<li>AnimalProductRaw</li>
+			</disallowedCategories>
+		</defaultIngredientFilter>
+
+		<!--? Product -->
+		<products>
+			<Chemfuel>50</Chemfuel>
+		</products>
+	</RecipeDef>
+</Defs>

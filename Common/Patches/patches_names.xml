@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!--! BiofuelRefinery (building name) -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName = "BiofuelRefinery"]/label</xpath>
+        <value>
+            <label>refinery</label>
+        </value>
+    </Operation>
+
+</Patch>

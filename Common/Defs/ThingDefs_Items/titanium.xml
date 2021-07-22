@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--! Titanium -->
+	<ThingDef ParentName="ResourceBase">
+		<!--? Info -->
+		<defName>XI_titanium</defName>
+		<label>titanium</label>
+		<description>A really tough and durable metal used for building a variety of structures, weapons and machines.</description>
+
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+
+		<!--? Graphics & Effects -->
+		<graphicData>
+			<texPath>XI/Things/Items/titanium</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+	
+		<!--? Stats -->
+		<statBases>
+			<Mass>0.4</Mass>
+			<MarketValue>8</MarketValue>
+
+			<SharpDamageMultiplier>1.05</SharpDamageMultiplier>
+			<BluntDamageMultiplier>0.95</BluntDamageMultiplier>
+
+	  		<StuffPower_Armor_Sharp>1</StuffPower_Armor_Sharp>
+	  		<StuffPower_Armor_Blunt>0.5</StuffPower_Armor_Blunt>
+
+	  		<StuffPower_Armor_Heat>0.5</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>2</StuffPower_Insulation_Cold>
+		</statBases>
+
+		<useHitPoints>false</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+
+		<burnableByRecipe>false</burnableByRecipe>
+		<smeltable>true</smeltable>
+
+		<!--? Stuff made of this -->
+		<stuffProps>
+			<categories>
+				<li>Metallic</li>
+			</categories>
+
+			<color>(210,225,230)</color>
+			<commonality>0.06</commonality>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<statFactors>
+				<MaxHitPoints>1.8</MaxHitPoints>
+				<Flammability>0.2</Flammability>
+
+				<Beauty>1</Beauty>
+
+				<WorkToMake>1.8</WorkToMake>
+				<WorkToBuild>1.8</WorkToBuild>
+
+				<MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
+			</statFactors>
+		</stuffProps>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <!--! Super-capacitor -->
+    <ThingDef ParentName="ResourceBase">
+        <!--? Info -->
+		<defName>XI_super_cap</defName>
+		<label>super-capacitor</label>
+		<description>A component, of great energy capacity, capable of fast charge and discharge while still providing high amounts of power.</description>
+
+		<techLevel>Industrial</techLevel>
+        <thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+
+		<tradeTags>
+            <li>ExoticMisc</li>
+        </tradeTags>
+
+        <!--? Graphics & Effects -->
+        <graphicData>
+			<texPath>XI/Things/Items/super_cap</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<uiIconScale>1.1</uiIconScale>
+
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+		
+        <!--? Stats -->
+		<stackLimit>25</stackLimit>
+        <statBases>
+			<MarketValue>26</MarketValue>
+			<Mass>0.7</Mass>
+
+            <MaxHitPoints>80</MaxHitPoints>
+            <DeteriorationRate>0.8</DeteriorationRate>
+		</statBases>
+            <!--* Not a drop from salvaging -->
+        <intricate>true</intricate>
+	</ThingDef>
+    
+</Defs>

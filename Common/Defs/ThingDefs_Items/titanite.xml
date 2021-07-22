@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--! Titanite -->
+	<ThingDef ParentName="ResourceBase">
+		<!--? Info -->
+		<defName>XI_titanite</defName>
+		<label>titanite</label>
+		<description>A hard yet brittle green crystal. Can be used as a source of titanium.</description>
+
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+
+		<!--? Graphics & Effects -->
+		<graphicData>
+			<texPath>XI/Things/Items/titanite</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+
+		<soundInteract>ChunkRock_Drop</soundInteract>
+		<soundDrop>ChunkRock_Drop</soundDrop>
+	
+		<!--? Stats -->
+		<statBases>
+			<Mass>0.45</Mass>
+			<MarketValue>6</MarketValue>
+
+			<SharpDamageMultiplier>0.8</SharpDamageMultiplier>
+			<BluntDamageMultiplier>0.9</BluntDamageMultiplier>
+		</statBases>
+
+		<useHitPoints>false</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+
+		<burnableByRecipe>false</burnableByRecipe>
+		<smeltable>true</smeltable>
+
+		<!--? Deep Mining -->
+		<deepCommonality>2</deepCommonality>
+		<deepLumpSizeRange>8~16</deepLumpSizeRange>
+		<deepCountPerPortion>20</deepCountPerPortion>
+	</ThingDef>
+
+</Defs>

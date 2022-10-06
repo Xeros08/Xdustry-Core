@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--! Make Subpersona Core -->
+	<RecipeDef>
+		<!--? Info -->
+		<defName>XI_MK_subpersona_cores_from_persona_core</defName>
+		<label>make subpersona core</label>
+		<description>Make a batch of high-grade subpersona cores by using an intact persona core as a base. Sadly, the reverse engineering process breaks down the persona core, rendering it useless.</description>
+		<jobString>Making Persona core.</jobString>
+
+		<!--? Effects -->
+		<effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+
+		<!--? Requisites -->
+		<researchPrerequisite>XI_R_subpersonas</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+
+		<!--? Work to make -->
+		<unfinishedThingDef>XI_unfinished_ai_core</unfinishedThingDef>
+		<workAmount>4000</workAmount> <!-- divide by ~57 -->
+    	<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+
+		<!--? Ingredients -->
+		<ingredients>
+			<li>
+				<filter><thingDefs>
+					<li>Plasteel</li>
+				</thingDefs></filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter><thingDefs>
+					<li>AIPersonaCore</li>
+				</thingDefs></filter>
+				<count>1</count>
+			</li>
+            <li>
+				<filter><thingDefs>
+					<li>ComponentSpacer</li>
+				</thingDefs></filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Plasteel</li>
+				<li>AIPersonaCore</li>
+                <li>ComponentSpacer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+
+		<!--? Product -->
+		<products>
+			<XI_subpersona_core>4</XI_subpersona_core>
+		</products>
+	</RecipeDef>
+
+</Defs>

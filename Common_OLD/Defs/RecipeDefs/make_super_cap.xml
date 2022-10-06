@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--! Make Super-sapacitor -->
+	<RecipeDef>
+		<!--? Info -->
+		<defName>XI_MK_super_cap</defName>
+		<label>make super-capacitor</label>
+		<description>Make a batch of super-capacitors.</description>
+		<jobString>Making Super-capacitor.</jobString>
+
+		<descriptionHyperlinks>
+			<ThingDef>XI_super_cap</ThingDef>
+		</descriptionHyperlinks>
+
+		<!--? Effects -->
+		<effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+
+		<!--? Requisites -->
+		<researchPrerequisite>XI_R_super_caps</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+		</skillRequirements>
+
+		<!--? Work to make -->
+		<unfinishedThingDef>XI_unfinished_generic</unfinishedThingDef>
+		<workAmount>3800</workAmount> <!-- divide by ~57 -->
+    	<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+
+		<!--? Ingredients -->
+		<ingredients>
+			<li>
+				<filter><thingDefs>
+					<li>XI_titanium</li>
+				</thingDefs></filter>
+				<count>12</count>
+			</li>
+			<li>
+				<filter><thingDefs>
+					<li>Plasteel</li>
+				</thingDefs></filter>
+				<count>2</count>
+			</li>
+            <li>
+				<filter><thingDefs>
+					<li>ComponentIndustrial</li>
+				</thingDefs></filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>XI_titanium</li>
+				<li>Plasteel</li>
+                <li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+
+		<!--? Product -->
+		<products>
+			<XI_super_cap>8</XI_super_cap>
+		</products>
+	</RecipeDef>
+
+</Defs>

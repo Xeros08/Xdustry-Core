@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!--! FabricationBench -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName = "FabricationBench"]/recipes</xpath>
+        <value>
+            <li>XI_MK_subpersona_cores_from_persona_core</li>
+	    </value>
+    </Operation>
+
+    <!--! TableMachining -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName = "TableMachining"]/recipes</xpath>
+        <value>
+            <li>XI_MK_super_cap</li>
+	    </value>
+    </Operation>
+
+    <!--! ElectricSmelter -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName = "ElectricSmelter"]/recipes</xpath>
+        <value>
+            <li>XI_MK_titanium_from_titanite</li>
+            <li>XI_MK_plasteel</li>            
+	    </value>
+    </Operation>
+
+    <!--! BiofuelRefinery -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName = "BiofuelRefinery"]/recipes</xpath>
+        <value>
+            <li>XI_MK_neutroamine</li>
+            <li>XI_MK_neutroamine_plus</li>
+            <li>XI_MK_chemfuel_from_wood_plus</li>
+            <li>XI_MK_chemfuel_from_organics_plus</li>
+	    </value>
+    </Operation>
+
+</Patch>

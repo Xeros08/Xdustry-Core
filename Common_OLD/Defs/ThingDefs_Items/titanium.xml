@@ -39,7 +39,6 @@
 		<useHitPoints>false</useHitPoints>
 		<healthAffectsPrice>false</healthAffectsPrice>
 
-		<!-- <slagDef>XI_chunk_slag_titanium</slagDef> -->
 		<burnableByRecipe>false</burnableByRecipe>
 		<smeltable>true</smeltable>
 
